@@ -19,7 +19,7 @@
 <body>
 
 	<!-- Navbar Start -->
-	<nav class="d-flex navbar navbar-expand-lg navbar-dark bg-dark">
+	<nav class="d-flex navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
 		<div class="container-fluid">
 			<a class="navbar-brand" href="./index.html">Vincer Manila</a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -80,9 +80,46 @@
 		<!-- Projects Section Start -->
 		<section class="container-fluid pt-5" id="projects">
 			<div class="row justify-content-center reveal">
-				<div class="col-sm-2 col-md-4 col-lg-6 col-xl-10">
+				<div class="col-sm-8 col-md-4 col-lg-6 col-xl-10">
 					<h1 class="pb-5">PROJECTS!</h1>
 					<h5>Speaking of projects, let me give you a brief tour of what i have done in the whole course of my career! :D</h5>
+				</div>
+				<div class="container">
+					<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+						<div class="col">
+							<div class="card shadow-sm">
+								<img src="img/doctorhub.png" class="card-img-top" width="100%" height="225">
+								<div class="card-body">
+									<p class="card-text">DoctorHub is one of my early freelance ASP.NET web Projects i made in collaboration with my colleagues.Features a vast majority of features designed to scheduling appointments easier and safer.</p>
+									<div class="d-flex justify-content-between align-items-center">
+										<small class="text-muted">Made Using ASP.NET</small>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card shadow-sm">
+								<img src="img/employeerecordspoc.png" class="card-img-top" width="100%" height="225">
+								<div class="card-body">
+									<p class="card-text">An Employee Records API for our Proof-Of-Concept Application for Metropolitan Bank and Trust Company.Packed with features and also has Kafka Integration for communicating with other programs.</p>
+									<div class="d-flex justify-content-between align-items-center">
+										<small class="text-muted">Made using C# for ASP.NET</small>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card shadow-sm">
+								<img src="img/mpti_bmr_launcher.png" class="card-img-top" width="100%" height="225">
+								<div class="card-body">
+									<p class="card-text">One of my Desktop-based applications, the MPTI-BMR Launcher was specifically made to integrate with the company's third party software to prevent unauthorized pull of data from the database.</p>
+									<div class="d-flex justify-content-between align-items-center">
+										<small class="text-muted">Made using C# for desktop applications</small>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 
@@ -91,24 +128,34 @@
 		<!-- Projects Section End -->
 		<!-- Contact Section -->
 		<section class="container-fluid pt-5" id="contact_me">
-			<div class="row justify-content-center reveal">
-				<div class="col-sm-2 col-md-4 col-lg-6 col-xl-10">
+			<div class="row d-flex justify-content-center reveal">
+				<div class="col-sm-8 col-md-10 col-lg-6 col-xl-10">
 					<h1 class="pb-5">Want to keep in touch?</h1>
 					<h5>As of the moment, I am not interested in looking for other opportunities, but if you have some questions in mind, feel free to inquire here and I'll get back to you as soon as i can!</h5>
-				</div>
-				<div class="col-sm-2 col-md-4 col-lg-6 col-xl-10 mb-3">
-					<label for="exampleFormControlInput1" class="form-label">Email address</label>
+					<label for="exampleFormControlInput1" class="form-label pt-3">Email address</label>
 					<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@email.com">
-				</div>
-				<div class="col-sm-2 col-md-4 col-lg-6 col-xl-10  mb-3">
-					<label for="exampleFormControlTextarea1" class="form-label">Type your Inquiries Here!</label>
+					<label for="exampleFormControlTextarea1" class="form-label pt-2">Type your Inquiries Here!</label>
 					<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+					<div class="d-grid mx-auto pt-3">
+						<button type="submit" class="btn btn-primary btn-lg ">Submit</button>
+					</div>
 				</div>
 			</div>
 
 		</section>
 
 		<!-- Contact Section End -->
+
+		<!-- Footer Section start -->
+		<footer class="footer mt-auto py-3 bg-dark text-light">
+			<div class="container">
+				<span class="text-muted">	&#169; Vincer Manila 2022</span>
+			</div>
+			<div class="container d-flex flex-row-reverse">
+				<span class="text-muted"><a href="https://ph.linkedin.com/in/vincer-manila-a51b88152"><i class="fa-brands fa-linkedin-in"></i></a></span>
+			</div>
+		</footer>
+		<!-- Footer Section End -->
 
 		<script type="text/javascript" src="./index.js"></script>
 		<!-- bootstrap js -->
